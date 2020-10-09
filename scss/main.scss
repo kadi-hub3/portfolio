@@ -127,6 +127,32 @@ h1,
     }
  }
 
+ //Contact Page
+ .boxes {
+     display: grid;
+     grid-template-rows: repeat(3,1fr);
+     justify-content: space-evenly;
+     align-items: center;
+     margin-top: 1rem;
+
+     div {
+         font-size: 2rem;
+         border: 3px #fff solid;
+         padding: 1.5rem 2rem;
+         margin-bottom: 3rem;
+         @include easeOut;
+
+         &:hover {
+             padding: 0.5rem 1.5rem;
+             background: $third-color;
+            //  color: set-text-color($secondary-color);
+            //  span {
+            //      color: set-text-color($secondary-color);
+            //  }
+         }
+     }
+ }
+
  //Button styles
  .btn {
      display: block;
