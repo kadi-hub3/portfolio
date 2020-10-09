@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -54,7 +54,7 @@
 
     &-branding, &-nav {
         display: flex;
-        flex-wrap: column wrap;
+        flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         float: left;
@@ -117,7 +117,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #ffff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
